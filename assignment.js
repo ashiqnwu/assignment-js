@@ -1,10 +1,12 @@
 /*Assignment-1 start*/
 
 function mindGame(number) {
+    /**Checking validation */
     if ((number < 0) || (typeof (number)) !== 'number') {
         return 'Enter valid number';
     }
     else {
+        /**starting main function here */
         let result = (((3 * number) + 10) / 2) - 5;
         return result;
     }
@@ -15,10 +17,12 @@ function mindGame(number) {
 /*Assignment-2 start*/
 
 function evenOdd(string) {
+    /**Checking validation */
     if (typeof (string) !== 'string') {
         return "Enter valid string";
     }
     else {
+        /**starting main function here */
         let stringLength = string.length;
         let output = '';
         if (stringLength % 2 === 1) {
@@ -36,10 +40,12 @@ function evenOdd(string) {
 /*Assignment-3 start*/
 
 function isLGSeven(number) {
+    /**Checking validation */
     if (typeof (number) !== 'number') {
         return "Enter valid number";
     }
     else {
+        /**starting main function here */
         let sum = (number - 7);
         let output = 0;
         if (sum < 7) {
@@ -58,6 +64,7 @@ function isLGSeven(number) {
 /*Assignment-4 start*/
 
 function findingBadData(givenArray) {
+    /**starting main function here */
     if (Array.isArray(givenArray) === true) {
         let arrayLength = givenArray.length;
         let badDataSum = 0;
@@ -72,6 +79,7 @@ function findingBadData(givenArray) {
         }
         return badDataSum;
     }
+    /**Checking validation */
     else {
         return 'Enter a valid Array';
     }
@@ -82,6 +90,7 @@ function findingBadData(givenArray) {
 /*Assignment-5 start*/
 
 function gemsToDiamond(number1, number2, number3) {
+    /**Checking validation */
     if ((typeof (number1) !== 'number') || (typeof (number2) !== 'number') || (typeof (number3) !== 'number')) {
         let returnDiamond = '';
         returnDiamond = "Please Enter valid number";
@@ -93,6 +102,7 @@ function gemsToDiamond(number1, number2, number3) {
         return returnDiamond;
     }
     else {
+        /**starting main function here */
         let totalDiamonds = number1 * 21 + number2 * 32 + number3 * 43;
         let returnDiamond = 0;
         if (totalDiamonds > 2000) {
